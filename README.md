@@ -31,3 +31,13 @@ The programs that helped in creating this project are:
 - Apache Tomcat 9
 
 ## Configuration
+### Setting up a database
+After cloning the repository, you will need the XAMPP program to run the database. This program can be downloaded [here](https://www.apachefriends.org/download.html).
+After installation, you should turn on the Apache and MySQL server (port 3306). By clicking on Admin next to MySQL you will be redirected to phpMyAdmin localhost where you can create a new database - name it `shopping_cart`. By clicking on this database you will be able to import SQL query. You will find this file in the repository folder; it is called `shopping_cart.sql`. After importing this query, 4 tables should be created: `categories`, `orders`, `products` and `users`. You're ready to start the project.
+### Setting up a project
+To run a project, open this folder with Netbeans and press run. After loading, you will see a blank page because you don't have any data in the database.
+Let's start with creating the first user, i.e. the admin:
+User Icon -> Register -> Fill in the form and press Register again -> using phpMyAdmin, change the role of the user from normal to admin.
+
+Then, to add products, you need to get to the administration panel, to do it, enter http://localhost:8080/ShoppingCart/admin in the URL.
+From there, you must first add the appropriate categories and then the items that belong to the categories. Remember to download the appropriate pictures for your products.
