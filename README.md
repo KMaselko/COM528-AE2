@@ -11,10 +11,11 @@ The main function of this application is to provide an online store-like service
 
 This project uses various technologies learned during the semester to meet the requirements for creating a functional program. These are:
 
-- HTML and CSS to create a front end that is a friendly looking website for all users
+- HTML, CSS and JavaScript to create a front end that is a friendly looking website for all users
 - JSP so that the website can display the back end of the page. In other words, JSP allows you to add interactivity and immersion
 - Java, which is the back end, allows you to write an entire program
 - Tomcat that allows you to create a virtual server
+- Maven that allows to install packages remotely
 - MySQL which saves the entire database for this program
 
 The programs that helped in creating this project are:
@@ -26,7 +27,6 @@ The programs that helped in creating this project are:
 ## Requirements
 - Java JDK 15
 - Netbeans (recommended)
-- [mysql-connector-java-5.1.23-bin.jar](http://www.java2s.com/Code/Jar/m/Downloadmysqlconnectorjava5123binjar.htm)
 - Any web browser (Google Chrome recommended)
 - Apache Tomcat 9
 
