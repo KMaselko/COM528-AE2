@@ -1,0 +1,18 @@
+.product-box {
+    border: 1px solid darkgray;
+}
+
+#login {
+    background: blanchedalmond;
+    width: 700px;
+    padding: 100px;
+    border-radius: 10px;
+}
+.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
