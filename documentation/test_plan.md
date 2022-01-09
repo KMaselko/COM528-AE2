@@ -34,8 +34,9 @@
 ## As a system
 |Test plan|Action|Expected result|Result given|Pass or Fail |
 |---------|------|-----------------|--------------|--------------|
-| 1 | Purchase an item | Decrement the stock of that item | Does not decrement the stock | Fail |
+| 1 | Purchase an item | Decrement the stock of that item | As expected | Pass |
 | 2 | Deactivate the user | The admin is able to deactivate a user | Is not implemented | Fail |
 | 3 | Orders bar from the admin menu | Orders are stored in the system | As expected | Pass |
 | 4 | Orders bar from the admin menu | Transactions are stored in the system | Not implemented | Fail |
 | 5 | Failed transactions | They should be stored in the systems | Transactions are not implemented | Fail |
+| 6 | Buy product when out of stock | Does not allow to buy it | As expected | Pass |
