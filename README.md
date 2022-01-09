@@ -4,7 +4,7 @@ The main function of this application is to provide an online store-like service
 
 ## Notes
 
-- Design documentation can be found here
+- Design documentation can be found [here](documentation/design.md)
 - Test plan can be found [here](documentation/test_plan.md)
 - The project is using the APACHE license V2 which can be found [here](./LICENSE) 
 
