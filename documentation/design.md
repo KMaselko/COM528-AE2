@@ -30,11 +30,18 @@ The use cases of different features in the application:
 | Admin | Admin adds or modifies a category | As expected |
 | Admin | Admin adds, modifies or removes a product | As expected |
 | Admin | Admin views or removes an order | As expected |
-| Admin |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Customer | Modify user | As expected |
+| Customer | Logs out | The user becomes a guest |
+| Customer | Purchases products | An order is being created, stock is decreasing |
+| Customer | Adds items to the cart | The cart is increasing and awaits the purchase |
+| Guest | Adds items to the cart | The cart is increasing but asks to log in to proceed |
+| Guest | Creates an account | The accoung is created and the guest becomes a customer |
+
+## Diagrams
+
+### Use Case Diagram
+![](/documentation/images/usecase.drawio.png)
+
+### UML Class Diagram
+![](/documentation/images/class.drawio.png)
+
