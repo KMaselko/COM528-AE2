@@ -32,6 +32,8 @@
 | 10 | Delete an order | Deletes an order from the database | As expected | Pass |
 
 ## As a system
+|Test plan|Action|Expected result|Result given|Pass or Fail |
+|---------|------|-----------------|--------------|--------------|
 | 1 | Purchase an item | Decrement the stock of that item | Does not decrement the stock | Fail |
 | 2 | Deactivate the user | The admin is able to deactivate a user | Is not implemented | Fail |
 | 3 | Orders bar from the admin menu | Orders are stored in the system | As expected | Pass |
