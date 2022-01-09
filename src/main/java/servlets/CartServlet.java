@@ -3,6 +3,7 @@ package servlets;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import dao.OrderDao;
+import dao.ProductDao;
 import entities.Order;
 import entities.ShoppingCart;
 import helper.ConnectionProvider;
@@ -48,9 +49,14 @@ public class CartServlet extends HttpServlet {
                 
                 // JDBC
                 OrderDao orderDao = new OrderDao(ConnectionProvider.getConnection());
+                ProductDao productDao = new ProductDao(ConnectionProvider.getConnection());
                 Order order = new Order(uid, pid, quantity, "paid");
-                if (orderDao.saveOrder(order)) {
-                    istrue = true;
+               if (orderDao.saveOrder(order)) {
+                    if (productDao.decreaseProductByIdAndQuantity(quantity, pid)) {
+                        istrue = true;
+                    } else {
+                        istrue = false;
+                    }
                 } else {
                     istrue = false;
                 }

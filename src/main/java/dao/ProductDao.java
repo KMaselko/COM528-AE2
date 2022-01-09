@@ -181,4 +181,33 @@ public class ProductDao {
         return flag;
     }
     
+    public boolean decreaseProductByIdAndQuantity(int quantity, int id) {
+        boolean flag = false;
+
+        try {
+
+            String q = "SELECT quantity FROM products WHERE id = ?";
+            PreparedStatement pstmt = this.con.prepareStatement(q);
+            pstmt.setInt(1, id);
+
+            ResultSet rs = pstmt.executeQuery();
+            if (rs.next()) {
+                quantity = rs.getInt("quantity") - quantity;
+            }
+            
+            String query = "UPDATE products SET quantity = ? WHERE id = ?";
+            PreparedStatement ps = this.con.prepareStatement(query);
+            ps.setInt(1, quantity);
+            ps.setInt(2, id);
+
+            ps.executeUpdate();
+
+            flag = true;
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return flag;
+    }
+    
 }
