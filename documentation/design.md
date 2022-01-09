@@ -47,3 +47,22 @@ Use Case Diagram shows the exact same process described in the table above but a
 UML Class Diagram describes the process behind the whole project, so called "backend". It shows how different functions and classes have been used to meet the requirements in the application that will make it more readable for everyone, especially for those who do not want to look at the code itself.
 ![](/documentation/images/class.drawio.png)
 
+## Plan & Design
+|Task|Description|
+|-----|-----|
+| Project Plan | Project plan on GitHub to work out the most important features to create the project |
+| Documentation | Documentation of the whole project using markdown in GitHub |
+| Use Cases | Use Case Diagram that would explain all the features in the project |
+| UML Class Diagram | UML Class Diagram that would explain all the classes and functions in the project |
+| Website Design | Website design for creating the frontend with meeting the requirements to the maximum |
+
+## Development process
+|Task|Description|
+|-----|-----|
+| Modules | Connecting different modules and class to make fully functional website |
+| Index page (front end) | Creating front end for the index page where every product will be displayed |
+| Index page (back end) | Creating back end in Java that would look into the database and get proper variables from it |
+| Database (mySQL) | Creating mySQL database using XAMPP and phpMyAdmin to store categories, products, orders and users |
+| Shopping cart (back end) | Creating shopping cart webpage to actually display every item that was added to the cart, calculate its prices and stock |
+| Login page | Creating login page that is connected to the user table in the database |
+| Admin panel | Creating admin panel where the administrator will have the full control over the website |
